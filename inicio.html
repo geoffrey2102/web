@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Capacitación Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Logo Centro de Capacitación">
+                <div class="logo-text">Centro<span>Capacitación</span></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#programs">Programas</a></li>
+                    <li><a href="#benefits">Beneficios Del Alumno</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="search-courses" placeholder="Busco un curso de ......">
+                <button id="search-button">🔍</button>
+            </div>
+        </div>
+        <div id="search-results" class="search-results"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>TRASFORMA TU FUTURO PROFESIONAL</h1>
+            <p>Bienvenido ala plataforma que te mostrara los cursos en los que puedes certificar con la Escuela del Instituto Nacional de Estadistica e Informatica.</p>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <div class="areas-container">
+                <div class="areas-sidebar">
+                    <h3 class="areas-title">Áreas de Capacitación</h3>
+                    <ul class="area-list">
+                        <li class="area-item active" data-area="office">
+                            <span class="area-icon">📐</span>
+                            <span class="area-text">OFFICE</span>
+                        </li>
+                        <li class="area-item" data-area="excel">
+                            <span class="area-icon">💻</span>
+                            <span class="area-text">EXCEL</span>
+                        </li>
+                        <li class="area-item" data-area="software">
+                            <span class="area-icon">🎯</span>
+                            <span class="area-text">SOFTWARES ESTADÍSTICOS Y PARA BASES DE DATOS</span>
+                        </li>
+                        <li class="area-item" data-area="programacion">
+                            <span class="area-icon">📊</span>
+                            <span class="area-text">PROGRAMACION</span>
+                        </li>
+                        <li class="area-item" data-area="estadistica">
+                            <span class="area-icon">🔧</span>
+                            <span class="area-text">ESTADISTICA Y ECONOMIA</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="programs-content">
+                    <h3 class="program-type-title">Tipos de programas</h3>
+                    <div class="program-type-tabs">
+                        <div class="program-tab active" data-tab="modulares">PROGRAMAS MODULARES</div>
+                    </div>
+                    
+                    <!-- Programas de Diseño (Visible por defecto) -->
+                    <div class="program-cards" id="Herramientas ofimaticas">
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="ofimatica-basica.jpg" alt="Herramientas Ofimaticas Basicas">
+                                <div class="program-badge">Programas Modulares</div>
+                            </div>
+                            <div class="program-details">
+                                <h3 class="program-title">Herramientas ofimatica asicas</h3>
+                                <div class="program-info">
+                                    <div class="info-item">
+                                        <span class="info-icon">🕒</span>
+                                        <span>30 Horas Académicas</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">💻</span>
+                                        <span>Online</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">👥</span>
+                                        <span>25</span>
+                                    </div>
+                                </div>
+                                <div class="program-action">
+                                    <button class="ver-programa">Ver Programa</button>
+                                    <button class="ver-temario">Ver Temario</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="officeintermedio.jpg" alt="Herramientas Ofimaticas Intermedias">
+                                <div class="program-badge">Programas Modulares</div>
+                            </div>
+                            <div class="program-details">
+                                <h3 class="program-title">Herramientas Ofimaticas Intermedias</h3>
+                                <div class="program-info">
+                                    <div class="info-item">
+                                        <span class="info-icon">🕒</span>
+                                        <span>30 Horas Académicas</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">💻</span>
+                                        <span>Online</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">👥</span>
+                                        <span>20</span>
+                                    </div>
+                                </div>
+                                <div class="program-action">
+                                    <button class="ver-programa">Ver Programa</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="avanzado.jpg" alt="Herramientas Ofimaticas Avanzadas">
+                                <div class="program-badge">Programas Modulares</div>
+                            </div>
+                            <div class="program-details">
+                                <h3 class="program-title">Herramientas Ofimaticas Avanzadas</h3>
+                                <div class="program-info">
+                                    <div class="info-item">
+                                        <span class="info-icon">🕒</span>
+                                        <span>30 Horas Académicas</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">💻</span>
+                                        <span>Online</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">👥</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                                <div class="program-action">
+                                    <button class="ver-programa">Ver Programa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Programas de Tecnología (Oculto por defecto) -->
+                    <div class="program-cards" id="Excel" style="display: none;">
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="graficos.png" alt="Funciones y Graficos con Excel Basico">
+                                <div class="program-badge">Programas Modulares</div>
+                            </div>
+                            <div class="program-details">
+                                <h3 class="program-title">Funciones y Graficos con Excel Basico</h3>
+                                <div class="program-info">
+                                    <div class="info-item">
+                                        <span class="info-icon">🕒</span>
+                                        <span>30 Horas Académicas</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">💻</span>
+                                        <span>Online</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">👥</span>
+                                        <span>18</span>
+                                    </div>
+                                </div>
+                                <div class="program-action">
+                                    <button class="ver-programa">Ver Programa</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="baseexcel.jpg" alt="Base de Datos con Excel">
+                                <div class="program-badge">Programas Modulares</div>
+                            </div>
+                            <div class="program-details">
+                                <h3 class="program-title">Base de Datos con Excel</h3>
+                                <div class="program-info">
+                                    <div class="info-item">
+                                        <span class="info-icon">🕒</span>
+                                        <span>30 Horas Académicas</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">💻</span>
+                                        <span>Online</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">👥</span>
+                                        <span>22</span>
+                                    </div>
+                                </div>
+                                <div class="program-action">
+                                    <button class="ver-programa">Ver Programa</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="excel.jpg" alt="Procesamiento de Datos y Programación con Excel Avanzado">
+                                <div class="program-badge">Programas Modulares</div>
+                            </div>
+                            <div class="program-details">
+                                <h3 class="program-title">Procesamiento de Datos y Programación con Excel Avanzado</h3>
+                                <div class="program-info">
+                                    <div class="info-item">
+                                        <span class="info-icon">🕒</span>
+                                        <span>30 Horas Académicas</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">💻</span>
+                                        <span>Online</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">👥</span>
+                                        <span>20</span>
+                                    </div>
+                                </div>
+                                <div class="program-action">
+                                    <button class="ver-programa">Ver Programa</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="tablas.jpg" alt="Procesamiento de Datos y Tablas Dinámicas en Excel">
+                                <div class="program-badge">Programas Modulares</div>
+                            </div>
+                            <div class="program-details">
+                                <h3 class="program-title">Procesamiento de Datos y Tablas Dinámicas en Excel</h3>
+                                <div class="program-info">
+                                    <div class="info-item">
+                                        <span class="info-icon">🕒</span>
+                                        <span>30 Horas Académicas</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">💻</span>
+                                        <span>Online</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">👥</span>
+                                        <span>20</span>
+                                    </div>
+                                </div>
+                                <div class="program-action">
+                                    <button class="ver-programa">Ver Programa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Programas de Marketing (Oculto por defecto) -->
+                    <div class="program-cards" id="SPSS" style="display: none;">
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="SPSS.png" alt="SPSS">
+                                <div class="program-badge">Programas Modulares</div>
+                            </div>
+                            <div class="program-details">
+                                <h3 class="program-title">SPSS BASICO , INTERMEDIO , AVANZADO</h3>
+                                <div class="program-info">
+                                    <div class="info-item">
+                                        <span class="info-icon">🕒</span>
+                                        <span>30 Horas Académicas</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">💻</span>
+                                        <span>Online</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">👥</span>
+                                        <span>25</span>
+                                    </div>
+                                </div>
+                                <div class="program-action">
+                                    <button class="ver-programa">Ver Programa</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="STATA1.png" alt="STATA">
+                                <div class="program-badge">Programas Modulares</div>
+                            </div>
+                            <div class="program-details">
+                                <h3 class="program-title">STATA BASICO, INTERMEDIO , AVANZADO</h3>
+                                <div class="program-info">
+                                    <div class="info-item">
+                                        <span class="info-icon">🕒</span>
+                                        <span>80 Horas Académicas</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">💻</span>
+                                        <span>Online</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">👥</span>
+                                        <span>30</span>
+                                    </div>
+                                </div>
+                                <div class="program-action">
+                                    <button class="ver-programa">Ver Programa</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="POWERBI.jpg" alt="POWER BI">
+                                <div class="program-badge">Programas Modulares</div>
+                            </div>
+                            <div class="program-details">
+                                <h3 class="program-title">POWER BI</h3>
+                                <div class="program-info">
+                                    <div class="info-item">
+                                        <span class="info-icon">🕒</span>
+                                        <span>30 Horas Académicas</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">💻</span>
+                                        <span>Online</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">👥</span>
+                                        <span>30</span>
+                                    </div>
+                                </div>
+                                <div class="program-action">
+                                    <button class="ver-programa">Ver Programa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Programas de SAP (Oculto por defecto) -->
+                    <div class="program-cards" id="sap-programs" style="display: none;">
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="/api/placeholder/400/200" alt="SAP Financiero">
+                                <div class="program-badge">Programas Modulares</div>
+                            </div>
+                            <div class="program-details">
+                                <h3 class="program-title">SAP Financiero</h3>
+                                <div class="program-info">
+                                    <div class="info-item">
+                                        <span class="info-icon">🕒</span>
+                                        <span>150 Horas Académicas</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">💻</span>
+                                        <span>Online</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">👥</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                                <div class="program-action">
+                                    <button class="ver-programa">Ver Programa</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="/api/placeholder/400/200" alt="SAP Logística">
+                                <div class="program-badge">Programas Modulares</div>
+                            </div>
+                            <div class="program-details">
+                                <h3 class="program-title">SAP Logística</h3>
+                                <div class="program-info">
+                                    <div class="info-item">
+                                        <span class="info-icon">🕒</span>
+                                        <span>130 Horas Académicas</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">💻</span>
+                                        <span>Online</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">👥</span>
+                                        <span>18</span>
+                                    </div>
+                                </div>
+                                <div class="program-action">
+                                    <button class="ver-programa">Ver Programa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Programas de Ingeniería (Oculto por defecto) -->
+                    <div class="program-cards" id="ingenieria-programs" style="display: none;">
+                        <div class="program-card">
+                            <div class="program-image">
+                                <img src="/api/placeholder/400/200" alt="AutoCAD">
+                                <div class="program-badge">Programas Modulares</div>
+                            </div>
+                            <div class="program-details">
+                                <h3 class="program-title">AutoCAD</h3>
+                                <div class="program-info">
+                                    <div class="info-item">
+                                        <span class="info-icon">🕒</span>
+                                        <span>90 Horas Académicas</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">💻</span>
+                                        <span>Online</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">👥</span>
+                                        <span>20</span>
+                                    </div>
+                                </div>
+                                <div class="program-action">
+                                    <button class="ver-programa">Ver Programa</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="program-card">
+
+                            <div class="program-image">
+                                <img src="/api/placeholder/400/200" alt="SolidWorks">
+                                <div class="program-badge">Programas Modulares</div>
+                            </div>
+                            <div class="program-details">
+                                <h3 class="program-title">SolidWorks</h3>
+                                <div class="program-info">
+                                    <div class="info-item">
+                                        <span class="info-icon">🕒</span>
+                                        <span>100 Horas Académicas</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">💻</span>
+                                        <span>Online</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">👥</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                                <div class="program-action">
+                                    <button class="ver-programa">Ver Programa</button>
+                                </div>
+                            </div>
+                            <!-- Añade este bloque dentro de <div class="program-cards" id="tecnologia-programs" style="display: none;"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Beneficios de Nuestra Capacitación</h2>
+                <p>Desarrolla tu potencial con un enfoque práctico y orientado a resultados.</p>
+            </div>
+            <div class="benefits-container">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Certificación Reconocida</h3>
+                    <p>Obtén certificados reconocidos por empresas líderes de la industria que validarán tus competencias profesionales.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">👨‍🏫</div>
+                    <h3>Instructores Expertos</h3>
+                    <p>Aprende de profesionales con amplia experiencia en la industria que te guiarán en cada paso de tu formación.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🔧</div>
+                    <h3>Formación Práctica</h3>
+                    <p>70% práctica y 30% teoría. Aprenderás haciendo en talleres equipados con tecnología de punta.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🌐</div>
+                    <h3>Bolsa de Trabajo</h3>
+                    <p>Accede a oportunidades laborales a través de nuestra red de empresas asociadas y servicio de colocación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¡Comienza Tu Formación Hoy!</h2>
+            <p>No esperes más para impulsar tu carrera profesional. Inscríbete ahora y asegura tu lugar en nuestros programas de alta demanda.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lo Que Dicen Nuestros Estudiantes</h2>
+                <p>Historias de éxito de quienes ya han completado nuestros programas.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Gracias a la capacitación en Diseño Gráfico, conseguí trabajo en una agencia reconocida apenas un mes después de graduarme. La formación práctica fue fundamental."</p>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="Carlos Mendoza">
+                        <div class="author-info">
+                            <h4>Carlos Mendoza</h4>
+                            <p>Diseñador Gráfico</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"El programa de Desarrollo Web me dio las herramientas que necesitaba para ascender en mi empresa. Ahora soy líder de proyectos digitales."</p>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="Laura Sánchez">
+                        <div class="author-info">
+                            <h4>Laura Sánchez</h4>
+                            <p>Líder de Proyectos Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"La formación en Edición de Video cambió mi vida. Pasé de no tener conocimientos en producción audiovisual a trabajar como editor freelance en menos de un año."</p>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="Miguel Torres">
+                        <div class="author-info">
+                            <h4>Miguel Torres</h4>
+                            <p>Editor de Video</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Centro de Capacitación</h3>
+                    <p>Formando profesionales de excelencia desde 2005. Más de 15,000 egresados exitosos.</p>
+                    <!-- Reemplaza la parte de social-links en el footer -->
+                    <div class="social-links">
+                        <a href="https://facebook.com/centrocapacitacion" target="_blank">
+                            <i class="fab fa-facebook-f"></i> facebook
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Programas</h3>
+                    <ul>
+                        <li><a href="#">Diseño Gráfico</a></li>
+                        <li><a href="#">Desarrollo Web</a></li>
+                        <li><a href="#">Edición de Video</a></li>
+                        <li><a href="#">Marketing Digital</a></li>
+                        <li><a href="#">SAP</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <div class="whatsapp-contact">
+                        <a href="https://wa.me/51987654321" target="_blank" class="whatsapp-button">
+                            Contáctanos por WhatsApp
+                        </a>
+                    </div>
+                    <address>
+                        Av. Principal 1234, Ciudad<br>
+                        WhatsApp: +51 987 654 321<br>
+                        Email: info@centrocapacitacion.com
+                    </address>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Centro de Capacitación Profesional. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <div id="solicitudModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            
+            <h2>Solicitar Información</h2>
+            <p>Déjanos tus datos y nos pondremos en contacto contigo</p>
+            
+            <form action="#" method="post" id="formularioContacto">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tipoDocumento">Tipo de Documento</label>
+                        <select id="tipoDocumento" name="tipoDocumento" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="dni">DNI</option>
+                            <option value="pasaporte">Pasaporte</option>
+                            <option value="ce">Carné de Extranjería</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="numeroDocumento">Número de Documento</label>
+                        <input type="text" id="numeroDocumento" name="numeroDocumento" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombres">Nombres</label>
+                        <input type="text" id="nombres" name="nombres" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="apellidos" name="apellidos" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" name="celular" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="region">Región</label>
+                        <select id="region" name="region" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="huancayo">Huancayo</option>
+                            <!-- Más opciones -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sede">Sede</label>
+                        <select id="sede" name="sede" required>
+                            <option value="">Seleccionar...</option>
+                            <!-- Las opciones se cargarán según la región seleccionada -->
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="contacto">¿Cómo te contactamos?</label>
+                        <select id="contacto" name="contacto" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="telefono">Teléfono</option>
+                            <option value="whatsapp">WhatsApp</option>
+                            <option value="correo">Correo electrónico</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="cursoSeleccionado">Cursos</label>
+                        <input type="text" id="cursoSeleccionado" name="cursoSeleccionado" readonly>
+                    </div>
+                </div>
+                
+                <div class="form-checkboxes">
+                    <div class="form-check">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label for="privacidad">Acepto las políticas de <a href="#">Privacidad y Uso de datos</a></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los <a href="#">Términos y condiciones</a>.</label>
+                    </div>
+                </div>
+                
+                <div class="form-submit">
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67e0199e98d9ad1905a9cef8/1in1m85d4';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+ <!-- Firebase SDK -->
+ <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+<script>
+
+  // Configuración de Firebase
+  const firebaseConfig = {
+    apiKey: "AIzaSyC1UR2jyA1qpLUxsIJAV-U1Lwzrfu1tePs",
+    authDomain: "paginaweb-bd0ad.firebaseapp.com",
+    databaseURL: "https://paginaweb-bd0ad-default-rtdb.firebaseio.com", // URL correcta
+    projectId: "paginaweb-bd0ad",
+    storageBucket: "paginaweb-bd0ad.appspot.com",
+    messagingSenderId: "20500351515",
+    appId: "1:20500351515:web:eabb0446f149ac75ab86be",
+    measurementId: "G-W268KYPFQE"
+};
+  // Inicializar Firebase
+  
+  firebase.initializeApp(firebaseConfig);
+    console.log("Firebase inicializado correctamente");
+  // Referencia a la base de datos
+  const database = firebase.database();
+  
+  // Mostrar programas cuando se hace clic en un área
+  document.querySelectorAll('.area-item').forEach(item => {
+    item.addEventListener('click', function() {
+      // Quitar clase active de todos los items
+      document.querySelectorAll('.area-item').forEach(el => {
+        el.classList.remove('active');
+      });
+      
+      // Añadir clase active al elemento clickeado
+      this.classList.add('active');
+      
+      // Obtener el área seleccionada
+      const area = this.getAttribute('data-area');
+      
+      // Ocultar todos los programas
+      document.querySelectorAll('.program-cards').forEach(el => {
+        el.style.display = 'none';
+      });
+      
+      // Mostrar los programas del área seleccionada
+      document.getElementById(area + '-programs').style.display = 'grid';
+    });
+  });
+  
+  // Cambiar entre tipos de programas (modulares y actualización)
+  document.querySelectorAll('.program-tab').forEach(tab => {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('.program-tab').forEach(el => {
+        el.classList.remove('active');
+        el.classList.remove('secondary');
+      });
+      
+      this.classList.add('active');
+      // Aquí podrías implementar la lógica para mostrar diferentes tipos de programas
+    });
+  });
+  
+  // Hacer que los enlaces de contacto funcionen
+  document.querySelectorAll('a[href="#contact"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('contact').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+  
+  // Abrir el modal cuando se hace clic en "Ver Programa"
+  document.querySelectorAll('.ver-programa').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const cursoTitulo = this.closest('.program-card').querySelector('.program-title').textContent;
+      document.getElementById('cursoSeleccionado').value = cursoTitulo;
+      document.getElementById('solicitudModal').style.display = 'block';
+    });
+  });
+  
+  // Cerrar el modal al hacer clic en la X
+  document.querySelector('.close-modal').addEventListener('click', function() {
+    document.getElementById('solicitudModal').style.display = 'none';
+  });
+  
+  // Cerrar el modal al hacer clic fuera del contenido
+  window.addEventListener('click', function(event) {
+    if (event.target == document.getElementById('solicitudModal')) {
+      document.getElementById('solicitudModal').style.display = 'none';
+    }
+  });
+  
+  // Script para cargar las sedes según la región seleccionada
+  document.getElementById('region').addEventListener('change', function() {
+    const region = this.value;
+    const sedeSelect = document.getElementById('sede');
+    
+    // Limpiar opciones actuales
+    sedeSelect.innerHTML = '<option value="">Seleccionar...</option>';
+    
+    if (region === 'lima') {
+      const sedes = ['San Juan de Lurigancho', 'San Martín de Porres', 'Independencia'];
+      sedes.forEach(sede => {
+        const option = document.createElement('option');
+        option.value = sede.toLowerCase().replace(/ /g, '-');
+        option.textContent = sede;
+        sedeSelect.appendChild(option);
+      });
+    } else if (region === 'arequipa') {
+      const sedes = ['Arequipa Centro', 'Paucarpata'];
+      sedes.forEach(sede => {
+        const option = document.createElement('option');
+        option.value = sede.toLowerCase().replace(/ /g, '-');
+        option.textContent = sede;
+        sedeSelect.appendChild(option);
+      });
+    }
+    // Añadir más condiciones para otras regiones
+  });
+  
+  // Manejar el envío del formulario
+  document.getElementById('formularioContacto').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Obtener los valores del formulario
+    const tipoDocumento = document.getElementById('tipoDocumento').value;
+    const numeroDocumento = document.getElementById('numeroDocumento').value;
+    const nombres = document.getElementById('nombres').value;
+    const apellidos = document.getElementById('apellidos').value;
+    const celular = document.getElementById('celular').value;
+    const correo = document.getElementById('correo').value;
+    const region = document.getElementById('region').value;
+    const sede = document.getElementById('sede').value;
+    const contacto = document.getElementById('contacto').value;
+    const cursoSeleccionado = document.getElementById('cursoSeleccionado').value;
+    
+    // Crear objeto con los datos del formulario
+    const formData = {
+      tipoDocumento,
+      numeroDocumento,
+      nombres,
+      apellidos,
+      celular,
+      correo,
+      region,
+      sede,
+      contacto,
+      cursoSeleccionado,
+      fechaEnvio: new Date().toString(),
+      estado: 'pendiente'
+    };
+    
+    // Generar una clave única para cada solicitud
+    const newFormRef = database.ref('solicitudes').push();
+    
+    // Guardar datos en Firebase
+    newFormRef.set(formData)
+      .then(() => {
+        alert('Solicitud enviada correctamente. Nos pondremos en contacto contigo pronto.');
+        document.getElementById('formularioContacto').reset();
+        document.getElementById('solicitudModal').style.display = 'none';
+      })
+      .catch(error => {
+        console.error('Error al enviar el formulario:', error);
+        alert('Hubo un error al enviar tu solicitud. Por favor, intenta nuevamente.');
+      });
+  });
+  // Buscador de cursos
+const searchInput = document.getElementById('search-courses');
+const searchButton = document.getElementById('search-button');
+const searchResults = document.getElementById('search-results');
+
+// Recopila todos los cursos disponibles
+function getAllCourses() {
+    const courses = [];
+    document.querySelectorAll('.program-card').forEach(card => {
+        const title = card.querySelector('.program-title').textContent;
+        const category = card.closest('.program-cards').id.replace('-programs', '');
+        const hours = card.querySelector('.info-item:first-child span:last-child').textContent;
+        
+        courses.push({
+            title: title,
+            category: category,
+            hours: hours,
+            element: card
+        });
+    });
+    console.log("Cursos encontrados:", courses.length); // Verifica que se encuentren cursos
+    return courses;
+}
+
+// Función de búsqueda
+function searchCourses(query) {
+    const allCourses = getAllCourses(); // Obtener cursos actualizados cada vez
+    
+    if (!query.trim()) {
+        searchResults.style.display = 'none';
+        return;
+    }
+    
+    console.log("Buscando:", query); // Verifica que la búsqueda se active
+    
+    const filteredCourses = allCourses.filter(course => 
+        course.title.toLowerCase().includes(query.toLowerCase()) ||
+        course.category.toLowerCase().includes(query.toLowerCase())
+    );
+    
+    console.log("Resultados:", filteredCourses.length); // Verifica resultados
+    displayResults(filteredCourses);
+}
+
+// Mostrar resultados
+function displayResults(courses) {
+    searchResults.innerHTML = '';
+    
+    if (courses.length === 0) {
+        searchResults.innerHTML = '<div class="search-results-item">No se encontraron cursos con ese criterio</div>';
+        searchResults.style.display = 'block';
+        return;
+    }
+    
+    courses.forEach(course => {
+        const resultItem = document.createElement('div');
+        resultItem.className = 'search-results-item';
+        resultItem.innerHTML = `
+            <h4>${course.title}</h4>
+            <p>Categoría: ${course.category}</p>
+            <p>Duración: ${course.hours}</p>
+        `;
+        
+        resultItem.addEventListener('click', () => {
+            // Ocultar todos los programas
+            document.querySelectorAll('.program-cards').forEach(el => {
+                el.style.display = 'none';
+            });
+            
+            // Mostrar la categoría correspondiente
+            document.getElementById(course.category + '-programs').style.display = 'grid';
+            
+            // Resaltar el área en el sidebar
+            document.querySelectorAll('.area-item').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.querySelector(`.area-item[data-area="${course.category}"]`).classList.add('active');
+            
+            // Hacer scroll a la sección de programas
+            document.getElementById('programs').scrollIntoView({behavior: 'smooth'});
+            
+            // Resaltar el curso encontrado
+            course.element.style.boxShadow = '0 0 15px rgba(75, 123, 245, 0.5)';
+            setTimeout(() => {
+                course.element.style.boxShadow = '';
+            }, 3000);
+            
+            // Ocultar resultados
+            searchResults.style.display = 'none';
+            searchInput.value = '';
+        });
+        
+        searchResults.appendChild(resultItem);
+    });
+    
+    searchResults.style.display = 'block';
+}
+
+// Configurar eventos después de asegurarse que el DOM está cargado
+window.addEventListener('load', function() {
+    // Eventos
+    searchButton.addEventListener('click', () => {
+        console.log("Botón de búsqueda clickeado");
+        searchCourses(searchInput.value);
+    });
+    
+    searchInput.addEventListener('keyup', (e) => {
+        if (e.key === 'Enter') {
+            console.log("Enter presionado en búsqueda");
+            searchCourses(searchInput.value);
+        }
+    });
+    
+    // Ocultar resultados al hacer clic fuera
+    document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !searchButton.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.style.display = 'none';
+        }
+    });
+    
+    // Mostrar resultados al enfocar el input
+    searchInput.addEventListener('focus', () => {
+        if (searchInput.value.trim() !== '') {
+            searchCourses(searchInput.value);
+        }
+    });
+    
+    console.log("Buscador inicializado correctamente");
+});
+
+
+// Función para abrir PDF de temario
+function abrirTemarioPDF(nombreCurso) {
+    // Obtener la ruta del PDF según el nombre del curso
+    const rutaPDF = obtenerRutaPDF(nombreCurso);
+    
+    // Abrir el PDF en una nueva pestaña
+    if (rutaPDF) {
+        window.open(rutaPDF, '_blank');
+    } else {
+        alert('El temario para este curso aún no está disponible.');
+    }
+}
+
+// Función para determinar la ruta del PDF según el nombre del curso
+function obtenerRutaPDF(nombreCurso) {
+    // Mapeo de cursos a archivos PDF (ajusta según tus archivos reales)
+    const mapaPDFs = {
+        'Herramientas ofimatica asicas': 'pdfs/ofimatica_basica_temario.pdf',
+        'Herramientas Ofimaticas Intermedias': 'pdfs/ofimatica_intermedia_temario.pdf',
+        'Herramientas Ofimaticas Avanzadas': 'pdfs/ofimatica_avanzada_temario.pdf',
+        'Funciones y Graficos con Excel Basico': 'pdfs/excel_basico_temario.pdf',
+        'Base de Datos con Excel': 'pdfs/excel_bd_temario.pdf',
+        'Procesamiento de Datos y Programación con Excel Avanzado': 'pdfs/excel_avanzado_temario.pdf',
+        'Procesamiento de Datos y Tablas Dinámicas en Excel': 'pdfs/excel_tablas_dinamicas_temario.pdf',
+        'SPSS BASICO , INTERMEDIO , AVANZADO': 'pdfs/spss_temario.pdf',
+        'STATA BASICO, INTERMEDIO , AVANZADO': 'pdfs/stata_temario.pdf',
+        'POWER BI': 'pdfs/power_bi_temario.pdf',
+        // Añade más cursos según sea necesario
+    };
+    
+    return mapaPDFs[nombreCurso] || null;
+}
+
+// Agregar evento clic a todos los botones de "Ver Temario"
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.ver-temario').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const cursoTitulo = this.closest('.program-card').querySelector('.program-title').textContent;
+            abrirTemarioPDF(cursoTitulo);
+        });
+    });
+});
+</script>
+
+<!--Start of Tawk.to Script-->
+
+    <!--End of Tawk.to Script-->
+</body>
+</html>
